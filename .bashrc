@@ -21,6 +21,8 @@ for i in $HOME/bin $HOME/.local/bin; do
     [ -d $i ] && { [[ "$PATH" =~ "$i:" ]] || PATH=$i:$PATH; }
 done; unset i
 
+# Add local installs to path
+export PATH="$HOME/.local/bin:$PATH"
 
 # disable systemctl's auto-paging feature
 export SYSTEMD_PAGER=
