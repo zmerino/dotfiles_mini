@@ -6,11 +6,13 @@ set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set smartindent
+" set smartindent
+set cindent
 set cursorline
 set hidden
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType python setlocal indentkeys-=0#
 
 " Run Flake8 on save
 autocmd BufWritePost *.py :!flake8 %
