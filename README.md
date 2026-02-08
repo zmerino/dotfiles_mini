@@ -10,7 +10,7 @@ Use the `dotfiles.sh` script to setup/teardown dotfile links to `$HOME` director
 In `$HOME` clone the dotfiles_mini repository. Then execute the following commands:
 
 1) `cd $HOME/dotfiles_mini`
-2) `chmod +x linker.sh `restore.sh dotfiles.sh`
+2) `chmod +x linker.sh restore.sh dotfiles.sh`
 3) `$HOME/dotfiles_mini/dotfiles.sh -l`
 
 ## Teardown
